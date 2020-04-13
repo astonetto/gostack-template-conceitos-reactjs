@@ -34,7 +34,7 @@ function App() {
     // Remover um repositório da sua API: Para cada item da sua lista, deve 
     //             possuir um botão com o texto Remover que, ao clicar, irá 
     //             chamar uma função para remover esse item da lista do seu 
-    //             frontend e da sua API.
+    //             frontend e da sua API. 
     api.delete(`/repositories/${id}`).then(response => {
       if(response.status === 204){  
         setRepositories(repositories.filter(repository => repository.id !== id))
